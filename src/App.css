@@ -1,0 +1,112 @@
+.app {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .customer-list-section {
+    width: 30%;
+    height: 600px; 
+    overflow-y: auto; 
+  }
+  
+  .customer-details-section {
+    width: 70%;
+    background-color: #f4f4f4;
+  }
+  
+  .customer-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  
+::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-radius: 10px; 
+    min-height: 20px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333; 
+  }
+  
+  .customer-card {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid #e0e0e0;
+    overflow: hidden;
+    color: #8f8e8e;
+  }
+
+  .customer-card p {
+    display: -webkit-box; 
+    display: box; 
+    -webkit-box-orient: vertical; 
+    box-orient: vertical; 
+    -webkit-line-clamp: 4; 
+    line-clamp: 4; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    line-height: 1.2em; 
+    max-height: 4.8em; 
+    word-wrap: break-word;
+  }
+  
+  .customer-card.selected {
+    background-color: #e0e0e0;
+  }
+  
+  .customer-details {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:15px;
+    padding: 30px;
+    margin-top: 20px;
+  }
+  
+  .photo-grid img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  h1, h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+  h3 {
+    color: #333;
+  }
+
+  .loading,
+.error {
+  text-align: center;
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 20px;
+}
+
+.loading {
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
+  
