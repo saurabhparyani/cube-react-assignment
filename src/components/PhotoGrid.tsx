@@ -51,6 +51,8 @@ const PhotoGrid: React.FC = () => {
       setDisplayPhotos(getRandomPhotos());
     }, 10000); // Update photos every 10 seconds
 
+    setDisplayPhotos(getRandomPhotos());
+
     return () => clearInterval(interval);
   }, [photos]);
 
